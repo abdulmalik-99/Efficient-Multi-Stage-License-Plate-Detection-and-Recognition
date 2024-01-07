@@ -32,6 +32,7 @@ python train.py --data_path data.yaml --model_path yolov8x.pt --number_of_epochs
 python system_testing.py --image_test_path  --image_save_path  --y_true_path  --lp_model_path  --text_model_path  --ocr_model_path 
 ```
 
-
+### Models Weight
+https://drive.google.com/drive/folders/1MchFtNTKPsoVuzCtncD8-ooWammW5swp?usp=sharing
 
 
