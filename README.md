@@ -7,7 +7,7 @@ Smart parking systems play a vital role in enhancing the efficiency and sustaina
 <summary>Image Preprocessing </summary>
 
 ```
-python image_preprocessing.py --images_dir  --annotations_dir  --output_dir  --names class1,class2,class3 --number_of_classes 3 --split_ratio 0.7 0.2 0.1
+python image_preprocessing.py --images_dir  --annotations_dir  --output_dir  --names class1,class2,class3 --number_of_classes 3 
 ```
 
 
@@ -31,7 +31,7 @@ python train.py --data data/data.yaml --epochs 50 --weights 'yolov5x.pt' --cfg y
 python train.py --data_path data.yaml --model_path yolov8x.pt --number_of_epochs 
 ```
 
-<summary>OCR Testing </summary>
+<summary>OCR Training </summary>
 
 ```
 python OCR_train.py --train_dir  --val_dir  --test_dir  --img_width 50 --img_height 50 --batch_size 16 --epochs 100
