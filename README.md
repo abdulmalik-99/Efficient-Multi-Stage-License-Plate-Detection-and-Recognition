@@ -24,7 +24,7 @@ python train.py --data data/data.yaml --epochs 50 --weights 'yolov5x.pt' --cfg y
 python train.py --data_path data.yaml --model_path yolov8x.pt --number_of_epochs 
 ```
 
-<summary>System Testing </summary>
+<summary>OCR Testing </summary>
 
 ```
 python OCR_train.py --train_dir  --val_dir  --test_dir  --img_width 50 --img_height 50 --batch_size 16 --epochs 100
