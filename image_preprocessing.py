@@ -16,7 +16,7 @@ def parse_arguments():
     parser.add_argument("--annotations_dir", required=True, help="Directory path for the input annotations.")
     parser.add_argument("--output_dir", required=True, help="Directory path for the output preprocessed and split data.")
     parser.add_argument("--names", required=True, type=str, help="Comma-separated list of class names.")
-    parser.add_argument("--nc", type=int, required=True, help="Number of classes.")
+    parser.add_argument("--number_of_classes", type=int, required=True, help="Number of classes.")
     parser.add_argument("--split_ratio", nargs=3, type=float, default=[0.7, 0.2, 0.1], help="Split ratio for training, validation, and testing sets.")
     return parser.parse_args()
 def image_preprocessing(image):
@@ -114,12 +114,12 @@ def split_data(images_dir, annotations_dir, output_dir, split_ratio):
         # Move the corresponding annotation file
         shutil.move(annotation_path, os.path.join(test_dir, os.path.basename(annotation_path)))
 
-def create_yaml_file(output_dir,nc,class_names):
+def create_yaml_file(output_dir,number_of_classes,class_names):
     yaml_data = {
         'train': 'train/',
         'val': 'valid/',
         'test': 'test/',
-        'nc': nc,
+        'number_of_classes': number_of_classes,
         'names': class_names
     }
 
@@ -140,4 +140,4 @@ if __name__ == "__main__":
 
     # Create the YAML file
     class_names = args.names.split(',')
-    create_yaml_file(args.output_dir, args.nc, class_names)
+    create_yaml_file(args.output_dir, args.number_of_classes, class_names)
