@@ -7,7 +7,7 @@ Smart parking systems play a vital role in enhancing the efficiency and sustaina
 <summary>Image Preprocessing </summary>
 
 ```
-python image_preprocessing.py --images_dir  --annotations_dir  --output_dir path/to/output --names class1,class2,class3 --number_of_classes 3 --split_ratio 0.7 0.2 0.1
+python image_preprocessing.py --images_dir  --annotations_dir  --output_dir  --names class1,class2,class3 --number_of_classes 3 --split_ratio 0.7 0.2 0.1
 ```
 
 
