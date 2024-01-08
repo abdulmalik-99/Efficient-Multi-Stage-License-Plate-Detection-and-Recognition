@@ -117,7 +117,7 @@ if __name__ == "__main__":
     parser.add_argument("--image_save_path", type=str, help="Path to save the output images")
     parser.add_argument("--y_true_path", type=str, help="Path to the ground truth file")
     parser.add_argument("--lp_model_path", type=str, help="Path to the License Plate model")
-    parser.add_argument("--nch_model_path", type=str, help="Path to the Number Character Detection model")
+    parser.add_argument("--text_model_path", type=str, help="Path to the Number Character Detection model")
     parser.add_argument("--ocr_model_path", type=str, help="Path to the Number Character Recognition model")
     args = parser.parse_args()
 
@@ -125,7 +125,7 @@ if __name__ == "__main__":
     image_save_path = args.image_save_path
     y_true_path = args.y_true_path
     lp_model_path = args.lp_model_path
-    nch_model_path = args.nch_model_path
+    nch_model_path = args.text_model_path
     ocr_model_path= args.ocr_model_path
 
     ocr_model , lp_model, nch_model = load_license_plate_models(paths=[lp_model_path, nch_model_path,ocr_model_path])
