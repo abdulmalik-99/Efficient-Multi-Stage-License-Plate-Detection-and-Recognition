@@ -3,11 +3,18 @@
 ## Abstract
 Smart parking systems play a vital role in enhancing the efficiency and sustainability of smart cities. However, most existing systems depend on sensors to monitor the occupancy of parking spaces, which entail high installation and maintenance costs and limited functionality in tracking vehicle movement within the car park. To address these challenges, we propose a novel learning-based approach for smart parking systems that utilizes existing surveillance cameras within the car park and leverages a self-collected dataset of Saudi car license plates. We train and fine-tune state-of-the-art YOLO series (i.e., YOLOv5, YOLOv7, and YOLOv8) for accurate Saudi car license plate detection and character segmentation. Moreover, we propose a new CNN architecture for improved license plate character recognition which outperforms the state-of-the-art frameworks. Additionally, we develop a web-based dashboard for real-time visualization and statistical analysis. We evaluate our approach on various metrics and demonstrate its effectiveness and efficiency in facilitating car park management.
 
+
+<summary>Image Preprocessing </summary>
+
+```
+python image_preprocessing.py --images_dir  --annotations_dir  --output_dir path/to/output --names class1,class2,class3 --number_of_classes 3 --split_ratio 0.7 0.2 0.1
+```
+
+
 <summary>Traing Yolov7 models </summary>
 
 ```
 python train.py  --data data/data.yaml --img 640  --cfg cfg/training/yolov7x.yaml --weights 'yolov7x.pt' --name yolov7 
-
 ```
 
 
