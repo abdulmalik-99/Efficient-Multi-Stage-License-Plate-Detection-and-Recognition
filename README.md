@@ -50,7 +50,6 @@ python system_testing.py --image_test_path  --image_save_path  --y_true_path  --
 https://drive.google.com/drive/folders/1MchFtNTKPsoVuzCtncD8-ooWammW5swp?usp=sharing
 
 ### How to Cite This Work:
-Mejdl Safran, Abdulmalik Alajmi, and Sultan Alfarhood, "Efficient Multi-Stage License Plate Detection and Recognition Using YOLOv8 and CNN for Smart Parking Systems", Journal of Sensors, under review, 2024.
-
+Mejdl Safran, Abdulmalik Alajmi, Sultan Alfarhood, "Efficient Multistage License Plate Detection and Recognition Using YOLOv8 and CNN for Smart Parking Systems", Journal of Sensors, vol. 2024, Article ID 4917097, 18 pages, 2024. https://doi.org/10.1155/2024/4917097
 
 
